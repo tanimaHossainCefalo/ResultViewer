@@ -14,7 +14,7 @@ const list = new ListTemplate(ul);
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     let doc;
-    if (type.value === "invoice") {
+    if (type.value === "without Defence") {
         doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
     }
     else {
