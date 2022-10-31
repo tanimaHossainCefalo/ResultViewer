@@ -20,7 +20,7 @@ form.addEventListener("submit", (e: Event) => {
   e.preventDefault();
 
   let doc: HasFormatter;
-  if (type.value === "withDefence") {
+  if (type.value === "With Defence") {
     doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
   } else {
     doc = new Payment(tofrom.value, details.value, amount.valueAsNumber);
